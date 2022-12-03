@@ -1,3 +1,2 @@
 # TrtImgApp
-# About
 This is a mini collaborative project exposing the main image processing operations such as reading, writing, equalization, filtering ...
