@@ -42,7 +42,7 @@ def filreMediane(matI, matFin, dimI, n):
                     if (k in range(0, dimI['ly'])) & (l in range(0, dimI['lx'])):
                         a[h] = matI[k][l]
                         h = h + 1
-            matFin[i][j] = a[pos]
+            matFin[i][j] = statistics.median(a)
     return matFin
 
 # ---------- Filtre Passe Haut -----------
