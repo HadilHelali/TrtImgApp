@@ -1,4 +1,6 @@
 from communfn import *
+import cv2
+import numpy as np
 
 # ----------------- lecture d'image binaire --------------------------
 def readImageBinary(filename):
@@ -59,6 +61,7 @@ def Erosion(matOrig):
 # --------- Dilatation ------------
 
 def dilatation(matOrigD):
+    '''
     matFiltreD = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
     matR = [[0] * len(matOrigD[0])] * len(matOrigD)
 
@@ -136,6 +139,12 @@ def dilatation(matOrigD):
                                 matOrigD[ind1 + l][ind2 + k] = 1
 
     return matOrigD
+    '''
+    img_dilation = cv2.dilate(np.array(matOrigD).astype('uint8'),
+                                  np.array([[0, 1, 0], [1, 1, 1], [0, 1, 0]]).astype('uint8'), iterations=1)
+
+    return img_dilation
+
 
 # --------- Fermeture ------------
 def Fermeture(matFermeture):
