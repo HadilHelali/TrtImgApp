@@ -44,15 +44,15 @@ if (btn):
         st.subheader("Image seuillée")
         st.pyplot(showImage("images/generated/imageSeuillée.ppm"))
     # fonction ET
-    matETFinal = et(mts,columns)
-    ecrireImagePgm("images/generated/ImageSeuilET.pgm", matETFinal, int(columns/3), lines, 255)
+    matETFinal = et(mt,nvseuils)
+    writeImagePpm(matETFinal, 'images/generated/ImageSeuilET', lines, columns)
     # fonction OU
-    matOUFinal = ou(mts, columns)
-    ecrireImagePgm("images/generated/ImageSeuilOU.pgm", matOUFinal, int(columns / 3), lines, 255)
+    matOUFinal = ou(mt, nvseuils)
+    writeImagePpm(matOUFinal, 'images/generated/ImageSeuilOU', lines, columns)
     grph1, grph2 = st.columns(2)
     with grph1:
         st.subheader("Image avec fonction ET")
-        st.pyplot(showImage("images/generated/ImageSeuilET.pgm"))
+        st.pyplot(showImage("images/generated/ImageSeuilET.ppm"))
     with grph2:
         st.subheader("Image avec fonction OU")
-        st.pyplot(showImage("images/generated/ImageSeuilOU.pgm"))
+        st.pyplot(showImage("images/generated/ImageSeuilOU.ppm"))

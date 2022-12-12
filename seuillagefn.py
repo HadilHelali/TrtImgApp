@@ -48,7 +48,19 @@ def SeuilmatriceCouleur(matS,s):
     return mrs
 
 # --------- fonction ET ------------
-def et(matET,columns):
+
+def et(matS,s):
+    # Matrice après seuillage :
+    mrset = []
+    for i in range(0 ,len(matS)):
+        if(matS[i][0] > s[0]) & (matS[i][1] > s[1]) & (matS[i][2] > s[2]):
+            tpl = (255,255,225)
+        else:
+            tpl = (0,0,0)
+        mrset.append(tpl)
+    return mrset
+
+'''def et(matET,columns):
     cols = int(columns / 3)
     matETF = []
     matligne = []
@@ -61,11 +73,10 @@ def et(matET,columns):
         else:
             matligne.append(225)
     matETF.append(matligne)
-    return matETF
-
+    return matETF'''
 
 # --------- fonction OU ------------
-def ou(matOU,columns):
+'''def ou(matOU,columns):
     cols = int(columns / 3)
     matOUF = []
     matligneOU = []
@@ -78,7 +89,17 @@ def ou(matOU,columns):
         else:
             matligneOU.append(225)
     matOUF.append(matligneOU)
-    return matOUF
+    return matOUF'''
+def ou(matS,s):
+    # Matrice après seuillage :
+    mrsou = []
+    for i in range(0 ,len(matS)):
+        if(matS[i][0] > s[0]) | (matS[i][1] > s[1]) | (matS[i][2] > s[2]):
+            tpl = (255,255,225)
+        else:
+            tpl = (0,0,0)
+        mrsou.append(tpl)
+    return mrsou
 
 # --------- algorithme Otsu ------------
 def class_average(cl, start, end):
