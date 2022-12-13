@@ -1,4 +1,4 @@
-from communfn import *
+from functions.communfn import *
 import cv2
 import numpy as np
 

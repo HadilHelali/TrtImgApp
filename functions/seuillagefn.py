@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from communfn import *
+from functions.communfn import *
 
 # --------- calcul de l'histogramme d'une image RGB ------------
 def histogrammeRGB(matC, car):

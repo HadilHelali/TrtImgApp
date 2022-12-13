@@ -2,9 +2,6 @@ import math
 import streamlit as st
 
 # --------- calcul de Moyenne ------------
-from matplotlib import pyplot as plt
-
-
 def moyenne(mat, dim):
     sum = 0
     for i in mat:

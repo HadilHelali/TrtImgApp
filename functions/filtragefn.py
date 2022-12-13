@@ -1,7 +1,7 @@
 import random
 import math
 import statistics
-from egalisationfn import moyenne
+from functions.egalisationfn import moyenne
 
 # --------- Bruiter une image ------------
 def genrerBruit(mat):
