@@ -1,6 +1,6 @@
 streamlit==1.15.2
 pandas
-cv2
+opencv-python-headless
 numpy
 matplotlib
 random
