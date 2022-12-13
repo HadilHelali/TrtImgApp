@@ -1,5 +1,3 @@
-import matplotlib.image as mpimg
-import streamlit as st
 import random
 import math
 import statistics

@@ -1,6 +1,4 @@
-import streamlit as st
-import numpy as np
-from communfn import *
+from functions.communfn import *
 
 st.title('Lecture et écriture')
 RemoveIndex()

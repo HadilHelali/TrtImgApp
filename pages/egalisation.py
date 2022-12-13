@@ -1,6 +1,5 @@
-import streamlit as st
-from communfn import *
-from egalisationfn import *
+from functions.communfn import *
+from functions.egalisationfn import *
 
 st.title('Egalisation')
 RemoveIndex()

@@ -1,4 +1,4 @@
-from seuillagefn import *
+from functions.seuillagefn import *
 
 st.title('Seuillage')
 

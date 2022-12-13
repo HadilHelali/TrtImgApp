@@ -1,5 +1,5 @@
-from opMorphfn import *
-from communfn import *
+from functions.opMorphfn import *
+from functions.communfn import *
 
 st.title('Opérations Morphologiques')
 
