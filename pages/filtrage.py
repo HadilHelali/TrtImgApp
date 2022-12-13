@@ -1,5 +1,6 @@
 from functions.communfn import *
 from functions.filtragefn import *
+import streamlit as st
 
 st.title('Filtrage')
 RemoveIndex()

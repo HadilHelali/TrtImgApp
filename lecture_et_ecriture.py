@@ -1,4 +1,5 @@
 from functions.communfn import *
+import streamlit as st
 
 st.title('Lecture et écriture')
 RemoveIndex()

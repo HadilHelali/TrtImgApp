@@ -1,5 +1,6 @@
 from functions.opMorphfn import *
 from functions.communfn import *
+import streamlit as st
 
 st.title('Opérations Morphologiques')
 
