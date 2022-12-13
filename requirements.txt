@@ -3,5 +3,3 @@ pandas
 opencv-python-headless
 numpy
 matplotlib
-random
-math
